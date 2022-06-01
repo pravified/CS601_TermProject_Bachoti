@@ -1,0 +1,261 @@
+/* Selectors for outer-most elements */
+.container {
+    position: relative;
+    margin: 0px;
+    background-color: #1a1a1a;
+    min-height: 100vh;
+    padding-top: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    background-color: #1a1a1a;
+    color: azure;
+    display: flex;
+}
+
+/* Use of flexbox */
+#verticalflex {
+    background-color: #1a1a1a;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation {
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+    background-color: #007cdb;
+    padding: 0px;
+    font-size: larger;
+    text-decoration: none;
+    color: ghostwhite;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 0;
+}
+
+#navlinks {
+    flex: 1 -10%;
+    text-align: justify;
+    display: inline-flex;
+    margin-right: 0%;
+    padding: 15px;
+}
+
+.navlink {
+    text-decoration: none;
+    margin-inline-end: 20px;
+}
+#activenavlink {
+    /*background: #014477;*/
+    font-weight: bold;
+    color: #1a1a1a;
+    text-decoration: none;
+    margin-inline-end: 10px;
+}
+
+a:visited {
+    text-decoration: none;
+    color: azure;
+}
+
+a:hover {
+    color: #014477;
+}
+
+#siteLogo {
+    flex: 1;
+    text-align: inherit;
+    display: inline-flex;
+    margin-left: 0%;
+    font-size: larger;
+    text-decoration: none;
+    color: ghostwhite;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 15px;
+}
+
+.siteLogoLink {
+    text-decoration: none;
+}
+
+/* Selector for smaller content sections */
+.infoSubContainer {
+    padding: 15px;
+}
+
+#biotext {
+    width: 600px;
+    padding: 20px;
+    font-size: medium;
+    font-family:inherit;
+    font-weight: lighter;
+    background-color: inherit;
+}
+
+.intro {
+    font-weight: bold;
+    text-align: left;
+}
+
+#introimage {
+    margin-left: 0px;
+    caption-side: bottom;
+    background-color: inherit;
+    word-wrap: normal;
+    flex: 0 40%;
+}
+
+#artgallery {
+    width: 100%;
+}
+
+.artgalleryphoto {
+    display: inline-block;
+    width: auto;
+    padding: 10px;
+    margin: 0px;
+    border: 2px solid ghostwhite;
+    background-color: ghostwhite;
+    color: #1a1a1a;
+    /*box-shadow: 10px 5px 5px rgb(37, 37, 37);*/
+}
+
+.mediaItem {
+    display: inline-block;
+    width: 60%;
+    padding: 10px;
+    margin: 0px;
+}
+
+/* Placeholder for video in print view */
+#vidPlaceholder {
+    visibility: collapse;
+}
+
+.caption {
+    font-size: smaller;
+}
+
+#contactInfoTable {
+    border: 0px;
+}
+
+.contactInfoTd {
+    padding: 10px;
+    font-size: larger;
+}
+
+/* Selectors for individual elements that constitute tables */
+#factTable {
+    border-collapse: collapse;
+}
+
+.factTh {
+    border: 1px solid #f9f8ff;
+    background-color: #f8f8ff;
+    color: #1a1a1a;
+    padding: 5px;
+}
+
+.factTd {
+    border: 1px solid ghostwhite;
+    padding: 5px;
+}
+
+footer {
+    clear: both;
+    text-align: center; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding: 5px;
+    background-color: #92b3d4;
+}
+
+/* Media Query for print view */
+@media print {
+    .navigation {
+        visibility: hidden;
+    }
+
+    footer {
+        visibility: hidden;
+    }
+
+    img {
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+    }
+
+    #introimage {
+        visibility: collapse;
+    }
+
+    #artgallery {
+        width: 100%;
+    }
+
+    .artgalleryphoto {
+        width: 25%;
+        visibility: visible;
+    }
+
+    .mediaItem {
+        visibility: collapse;
+    }
+
+    .vidPlaceholder {
+        visibility: visible;
+    }
+}
+
+/* Media Query for mobile view */
+@media only screen and (max-width: 768px) {
+
+    .wrapper {
+        flex-direction: column;
+        width: 100%
+    }
+
+    .navigation {
+        display: inline;
+        font-size: small;
+    }
+
+    img {
+        height: 25%;
+        width: 100%;
+    }
+
+    #introimage {
+        visibility: collapse;
+    }
+
+    #biotext {
+        padding: 5px;
+        width: 100%;
+    }
+
+    .mediaItem {
+        object-fit: contain;
+        height: 25%;
+        width: 100%;
+    }
+}
+
+/*
+    Sources:
+    “Flexbox - Learn Web Development: MDN.” Learn Web Development | MDN, https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox. 
+    “Box-Shadow - CSS: Cascading Style Sheets: MDN.” CSS: Cascading Style Sheets | MDN, https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow. 
+    “How to Remove HTML Purple Link – an Easy Solution.” The JavaScript Diaries, 5 May 2020, https://www.jsdiaries.com/how-to-remove-html-purple-link-an-easy-solution/. 
+    Fraser, Dominic. “How to Keep Your Footer Where It Belongs ?” FreeCodeCamp.org, FreeCodeCamp.org, 16 May 2022, https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/. 
+    Schwarz, Daniel. “How to Use CSS Media Queries to Make Printable Web Pages.” Our Blog, Our Blog, 15 Dec. 2021, https://sympli.io/blog/a-quick-guide-to-css-for-printable-webpages/. 
+    “Responsive Web Design - Media Queries.” Responsive Web Design Media Queries, https://www.w3schools.com/css/css_rwd_mediaqueries.asp. 
+*/
