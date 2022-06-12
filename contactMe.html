@@ -24,8 +24,37 @@
             <!-- BU email, personal email, phone, alternative phone, state -->
             <article class="infoSubContainer">
                 <h2>Contact Me</h2>
-                <aside>Questions, comments or concerns? You can reach me at the following: </aside><br/>
-                <table id="contactInfoTable">
+                <!-- full form contents: first name, last name, email address, confirm email address, city, state, zip, industry -->
+                <aside>Questions, comments or concerns? Please fill out the form below: </aside><br/>
+                <form id="contactMeForm">
+                <div class="formContainer">
+                    <label for="firstName">First name: </label><input type="text" name="firstName" id="firstname"/>
+                    <label for="lastName">Last name: </label><input type="text" name="lastName" id="lastname"/>
+                    <label for="emailAddress">Email Address: </label><input type="text" name="emailAddress" id="emailaddr"/>
+                    <label for="confEmailAddress">Confirm Email Address: </label><input type="text" name="confEmailAddress" id="confemailaddress"/>
+                    <label for="phoneNum">Phone: </label><input type="text" name="phoneNum" id="phonenum"/>
+                    <label for="city">City: </label><input type="text" name="city" id="city"/>
+                    <label for="state">State: </label><input type="text" name="state" id="state"/>
+                    <label for="zip">Zip: </label><input type="text" name="zip" id="zip"/>
+                    <label for="industry">Industry: </label><select name="industry" id="industrySelect">
+                        <option value="InformationTechnology">Information Technology</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Education">Education</option>
+                        <option value="AccountingFinance">Accounting & Finance</option>
+                        <option value="SocialWork">Social Work</option>
+                        <option value="LifeSciences">Life Sciences</option>
+                        <option value="HumanResources">Human Resources</option>
+                    </select>
+                    <label for="messageType">Message Type: </label><select name="messageType" id="msgTypeSelect">
+                        <option value="question">Question</option>
+                        <option value="comment">Comment</option>
+                        <option value="concern">Concern</option>
+                    </select>
+                    <label for="messageContent">Message: </label><textarea name="messageContent" id="msgcontent"></textarea>
+                    <input type="submit" id="submitBtn"/>
+                </div>
+                </form>
+                <!--<table id="contactInfoTable">
                     <tr>
                         <td class="contactInfoTd">Email</td>
                         <td class="contactInfoTd"><address><a href="mailto:praveenb@bu.edu">praveenb@bu.edu</a></address></td>
@@ -46,9 +75,9 @@
                         <td class="contactInfoTd">State</td>
                         <td class="contactInfoTd">Maryland</td>
                     </tr>
-                </table>
+                </table>-->
             </article>
-        </main>
+        </main><br/><br/><br/>
     <footer>
         Praveen Bachoti. METCS601. <a href="https://www.bu.edu/">Boston University.</a>
         <address><a href="mailto:praveenb@bu.edu">praveenb@bu.edu</a></address> 
