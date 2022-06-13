@@ -22,12 +22,12 @@
                 </nav>
             </header>
             <!-- BU email, personal email, phone, alternative phone, state -->
-            <article class="infoSubContainer">
+            <article class="infoSubContainer" id="contactMeForm">
                 <h2>Contact Me</h2>
                 <!-- full form contents: first name, last name, email address, confirm email address, city, state, zip, industry -->
                 <aside>Questions, comments or concerns? Please fill out the form below: </aside><br/>
-                <form id="contactMeForm">
-                <div class="formContainer">
+                <form>
+                <article class="formContainer">
                     <label for="firstName">First name: </label><input type="text" name="firstName" id="firstname"/>
                     <label for="lastName">Last name: </label><input type="text" name="lastName" id="lastname"/>
                     <label for="emailAddress">Email Address: </label><input type="text" name="emailAddress" id="emailaddr"/>
@@ -52,7 +52,7 @@
                     </select>
                     <label for="messageContent">Message: </label><textarea name="messageContent" id="msgcontent"></textarea>
                     <input type="submit" id="submitBtn"/>
-                </div>
+                </article>
                 </form>
                 <!--<table id="contactInfoTable">
                     <tr>

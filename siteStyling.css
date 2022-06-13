@@ -35,7 +35,7 @@
     left: 0px;
     right: 0px;
     top: 0px;
-    z-index: 0;
+    z-index: 1;
 }
 
 #navlinks {
@@ -136,25 +136,30 @@ a:hover {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 50% 50%;
-    gap: 10px;
+    gap: 15px;
+    text-align: left;
+}
+
+#contactMeForm {
+    position:relative;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
     width: 500px;
 }
 
-.formRowContainer{
-    width: auto;
-}
-
-.formRowLeftItem {
-    justify-self: start;
-}
-
-.formRowRightItem {
-    justify-self: end;
-}
-
 #submitBtn {
-    grid-column-start: 1;    
-    grid-column-end: 2;
+    width: 40%;
+    justify-self: center;
+    grid-column-start: span 2;
+    background-color:aliceblue;
+    color:darkblue;
+    border-radius: 10px;
+    font-size: large;
+}
+
+textarea {
+    height: 100px;
 }
 
 /* Placeholder for video in print view */
