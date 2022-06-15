@@ -4,6 +4,7 @@
         <title>Praveen's Website | Contact Me</title>
         <meta charset="UTF-8">
         <link href="siteStyling.css" rel="stylesheet"/> 
+        <script src="./contactMeValidation.js"></script>
     </head>
     <body class="container">
         <main class="wrapper">
@@ -26,16 +27,22 @@
                 <h2>Contact Me</h2>
                 <!-- full form contents: first name, last name, email address, confirm email address, city, state, zip, industry -->
                 <aside>Questions, comments or concerns? Please fill out the form below: </aside><br/>
-                <form>
+                <form onsubmit="return validateEntries()">
                 <article class="formContainer">
-                    <label for="firstName">First name: </label><input type="text" name="firstName" id="firstname"/>
-                    <label for="lastName">Last name: </label><input type="text" name="lastName" id="lastname"/>
-                    <label for="emailAddress">Email Address: </label><input type="text" name="emailAddress" id="emailaddr"/>
-                    <label for="confEmailAddress">Confirm Email Address: </label><input type="text" name="confEmailAddress" id="confemailaddress"/>
-                    <label for="phoneNum">Phone: </label><input type="text" name="phoneNum" id="phonenum"/>
-                    <label for="city">City: </label><input type="text" name="city" id="city"/>
-                    <label for="state">State: </label><input type="text" name="state" id="state"/>
-                    <label for="zip">Zip: </label><input type="text" name="zip" id="zip"/>
+                    <label for="firstName">First name: *</label><input type="text" name="firstName" id="firstName"/>
+                    <aside id="fnError" class="contactMeErrors">Only letters and numbers allowed for first name.</aside>
+                    <label for="lastName">Last name: *</label><input type="text" name="lastName" id="lastName"/>
+                    <aside id="lnError" class="contactMeErrors">Only letters and numbers allowed for last name.</aside>
+                    <label for="emailAddress">Email Address: *</label><input type="text" name="emailAddress" id="emailAddress" placeholder="emailaddress@example.com"/>
+                    <aside id="emailError" class="contactMeErrors">Email address format is invalid.</aside>
+                    <label for="confEmailAddress">Confirm Email Address: *</label><input type="text" name="confEmailAddress" id="confEmailAddress" placeholder="emailaddress@example.com"/>
+                    <aside id="confEmailError" class="contactMeErrors">Email address format is invalid.</aside>
+                    <label for="phoneNum">Phone: *</label><input type="text" name="phoneNum" id="phoneNum" placeholder="(___) ___-____"/>
+                    <aside id="phoneNumError" class="contactMeErrors">Phone number format is invalid.</aside>
+                    <label for="city">City: *</label><input type="text" name="city" id="city"/>
+                    <aside id="cityError" class="contactMeErrors">City is required</aside>
+                    <label for="state">State: *</label><input type="text" name="state" id="state"/>
+                    <label for="zip">Zip: *</label><input type="text" name="zip" id="zip" placeholder="_____"/>
                     <label for="industry">Industry: </label><select name="industry" id="industrySelect">
                         <option value="InformationTechnology">Information Technology</option>
                         <option value="Healthcare">Healthcare</option>
@@ -50,8 +57,8 @@
                         <option value="comment">Comment</option>
                         <option value="concern">Concern</option>
                     </select>
-                    <label for="messageContent">Message: </label><textarea name="messageContent" id="msgcontent"></textarea>
-                    <input type="submit" id="submitBtn"/>
+                    <label for="messageContent">Message: *</label><textarea name="messageContent" id="msgcontent"></textarea>
+                    <input type="submit" id="submitBtn" name="submitBtn" value="Submit"/>
                 </article>
                 </form>
                 <!--<table id="contactInfoTable">

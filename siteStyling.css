@@ -1,10 +1,16 @@
 /* Selectors for outer-most elements */
+@font-face {
+    font-family: RecursiveSans;
+    src: url("");
+}
+
 .container {
     position: relative;
     margin: 0px;
     background-color: #1a1a1a;
     min-height: 100vh;
     padding-top: 50px;
+    /*font-family: RecursiveSans;*/
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -195,6 +201,36 @@ textarea {
 .factTd {
     border: 1px solid ghostwhite;
     padding: 5px;
+}
+
+.contactMeErrors {
+    grid-column: 2;
+    font-size: small;
+    color:crimson;
+}
+
+#fnError {
+    display: none;
+}
+
+#lnError {
+    display: none;
+}
+
+#emailError {
+    display: none;
+}
+
+#confEmailError {
+    display: none;
+}
+
+#phoneNumError{
+    display: none;
+}
+
+#cityError{
+    display: none;
 }
 
 footer {
