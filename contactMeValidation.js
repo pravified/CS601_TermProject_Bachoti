@@ -22,6 +22,8 @@ function getDOMElems(){
     confEmailError = document.getElementById("confEmailError");
     phoneNum = document.getElementById("phoneNum");
     phoneNumError = document.getElementById("phoneNumError");
+    zipCode = document.getElementById("zip");
+    zipError = document.getElementById("zipError");
 }
 
 
@@ -33,6 +35,8 @@ function validateEntries () {
     validationResults[2] = isEmailFormatValid(emailError, emailAddress.value);
     validationResults[3] = isEmailFormatValid(confEmailError, confEmailAddress.value);
     validationResults[4] = isPhoneFormatValid(phoneNumError, phoneNum.value);
+    validationResults[5] = isZipFormatValid(zipError, zipCode.value);
+
 
     for(let i=0; i<validationResults.length; i++){
         if(validationResults[i] === false)
@@ -80,6 +84,20 @@ function isPhoneFormatValid(phoneError, phoneValue) {
     }
     else {
         phoneError.style.display = "none";
+        return true;
+    }
+}
+
+// Constant for phone format regex
+const zipFormat = /^[0-9]{5}$/g;
+// Verifies that the phone's format is valid
+function isZipFormatValid(zipError, zipValue) {
+    if(!zipValue.match(zipFormat)) {
+        zipError.style.display = "block";
+        return false;
+    }
+    else {
+        zipError.style.display = "none";
         return true;
     }
 }

@@ -61,7 +61,6 @@
     font-weight: bold;
     color: #1a1a1a;
     text-decoration: none;
-    margin-inline-end: 10px;
 }
 
 a:visited {
@@ -230,6 +229,10 @@ textarea {
 }
 
 #cityError{
+    display: none;
+}
+
+#zipError{
     display: none;
 }
 
