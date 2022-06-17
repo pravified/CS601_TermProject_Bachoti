@@ -63,6 +63,27 @@
     text-decoration: none;
 }
 
+.navDropDown {
+    position: relative;
+    display: inline-block;
+}
+.navDropDown:hover .navDropDownContent {
+    display: block;
+}
+.navDropDownContent {
+    display: none;
+    position: absolute;
+    background-color:#007cdb;
+    box-shadow: 0px 9px 15px 0px #1a1a1ac5;
+    min-width: 120px;
+    z-index: 2;
+}
+.navDropDownContent a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
 a:visited {
     text-decoration: none;
     color: azure;
@@ -243,7 +264,7 @@ footer {
     position: absolute;
     width: 100%;
     bottom: 0px;
-    padding: 5px;
+    padding: 8px;
     background-color: #92b3d4;
 }
 

@@ -1,0 +1,29 @@
+{
+    "influencers": [
+    {
+          "name": "Murad Osmann",
+          "location": "test1",
+          "description": "test1"
+    },
+    {
+        "name": "Chris Burkard",
+        "location": "test2",
+        "description": "test2"
+    },
+    {
+        "name": "Jennifer Tuffen",
+        "location": "test3",
+        "description": "test3"
+    },
+    {
+        "name": "Jessica Stein",
+        "location": "test4",
+        "description": "test4"
+    },
+    {
+        "name": "Alex Stein",
+        "location": "test5",
+        "description": "test5"
+    }
+    ]
+}

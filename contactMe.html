@@ -15,8 +15,13 @@
                     <div id="navlinks">
                         <a href="index.html" class="navlink">Home</a>
                         <a href="activities.html" class="navlink">Activities</a>
-                        <a href="interests.html" class="navlink">Interests</a>
-                        <a href="media.html" class="navlink">Media</a>
+                        <div class="navDropDown">
+                            <a class="navlink">Interests</a>
+                            <div class="navDropDownContent">
+                                <a href="novels.html">Novels</a>
+                                <a href="traveling.html">Vacation</a>
+                            </div>
+                        </div>                        <a href="media.html" class="navlink">Media</a>
                         <a class="navlink" id="activenavlink">Contact Me</a>
                         <a href="releaseHistory.html" class="navlink">Release History</a>
                     </div>
@@ -98,10 +103,12 @@
                         <option value="MP">MP - Northern Mariana Islands</option>
                         <option value="PR">PR - Puerto Rico</option>
                         <option value="VI">VI - U.S. Virgin Islands</option>
+                        <!-- Referenced from: https://en.wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States -->
                     </select>
                     <label for="zip">Zip: *</label><input type="text" name="zip" id="zip" placeholder="_____"/>
                     <aside id="zipError" class="contactMeErrors">Zip code format is invalid.</aside>
                     <label for="industry">Industry: </label><select name="industry" id="industrySelect">
+                        <option value="Select Industry"></option>
                         <option value="InformationTechnology">Information Technology</option>
                         <option value="Healthcare">Healthcare</option>
                         <option value="Education">Education</option>
@@ -111,6 +118,7 @@
                         <option value="HumanResources">Human Resources</option>
                     </select>
                     <label for="messageType">Message Type: </label><select name="messageType" id="msgTypeSelect">
+                        <option value="Select Type" style="font-style: italic;"></option>
                         <option value="question">Question</option>
                         <option value="comment">Comment</option>
                         <option value="concern">Concern</option>

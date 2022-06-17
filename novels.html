@@ -13,19 +13,21 @@
                     <div id="navlinks">
                         <a href="index.html" class="navlink">Home</a>
                         <a href="activities.html" class="navlink">Activities</a>
-                        <a class="navlink" id="activenavlink">Interests</a>
-                        <a href="media.html" class="navlink">Media</a>
+                        <div class="navDropDown">
+                            <a class="navlink">Interests</a>
+                            <div class="navDropDownContent">
+                                <a href="novels.html" id="activenavlink">Novels</a>
+                                <a href="traveling.html">Vacation</a>
+                            </div>
+                        </div>                        <a href="media.html" class="navlink">Media</a>
                         <a href="contactMe.html" class="navlink">Contact Me</a>
                         <a href="releaseHistory.html" class="navlink">Release History</a>
                     </div>
                 </nav>
             </header>
-        <section class="infoSubContainer">
-            <h2>My Interests</h2>
-        </section>
         <!-- Section for table element of graphic novels -->
         <section class="infoSubContainer">
-            <h3>Favorite Graphic Novels</h3>
+            <h2>Favorite Graphic Novels</h2>
             <div><p>Below are my favorite graphic novels that I have read, published by the company Image comics.</p></div>
             <table id="factTable">
                 <thead>
@@ -61,16 +63,6 @@
                     <td class="factTd">4.9/5</td>
                 </tr>
             </table>
-        </section>
-        <!-- Section for table element of vacation wish list -->
-        <section class="infoSubContainer">
-            <h3>Vacation Wish List</h3>
-            <p>Here are some locations I desire to visit and some activities I would like to undertake in each. </p>
-            <ol>
-                <li><data value="001">Sailing in Malta</data></li>
-                <li><data value="002">Skiing in Finland</data></li>
-                <li><data value="003">Hiking in Argentina</data></li>
-            </ol>
         </section>
     <br/>
     <br/>
