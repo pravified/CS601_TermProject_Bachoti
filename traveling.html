@@ -3,6 +3,7 @@
     <head>
         <title>Praveen's Website | Interests</title>
         <meta charset="UTF-8">
+        <script src="./traveling.js"></script>
         <link href="siteStyling.css" rel="stylesheet"/> 
     </head>
     <body class="container">
@@ -37,20 +38,24 @@
                 <li><data value="004">Surfing in California</data></li>
                 <li><data value="005">Skydiving in Colorado</data></li>
                 <li><data value="006">Horseback riding in Mongolia</data></li>
-                <li><data value="007">Swimming in Australia</data></li>
+                <li><data value="007">Golfing in Canada</data></li>
             </ol>
         </section>
         <!-- Section for dropdown to select travel influencers retrieved from back-end -->
         <section class="infoSubContainer">
-            <fieldset>
+            <fieldset id="influencer">
                 <legend>Inspiring Travel Influencers</legend>
                 <label>Select Influencer: </label>
-                <select>
-                    <option>Name1</option>
+                <select id="infNameDropdown" onselect="displayInfluencer()">
+                    <option>Murad Osmann</option>
+                    <option>Chris Burkard</option>
+                    <option>Jennifer Tuffen</option>
+                    <option>Jessica Stein</option>
+                    <option>Alex Stein</option>
                 </select>
-                <h3>Name1</h3>
-                <article id="influencer">
-                    <p>
+                <h3 id="infName">Name1</h3>
+                <article>
+                    <p id="infDesc">
                         Lorem ipsum
                     </p>
                     <figure></figure>
