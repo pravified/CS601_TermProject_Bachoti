@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         // If it does, write contents to DOM, and break
         data.influencers.every((element) => {
           if(element.name === infNameSelect.value) {
-            infNameText.value = document.write(element.name);
-            infDescText.value = document.write(element.description);
+            infNameText.innerHTML = element.name;
+            infDescText.innerHTML = element.description;
 
             console.log("Influencer data displayed");
             return false;
