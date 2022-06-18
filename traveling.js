@@ -34,4 +34,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   Sources:
   Basic concept and approach referenced from 
   Hanson, Josh. “cs601-Fetch-2/Script.js.” 12 June 2022. 
+
+  https://www.w3schools.com/jsref/jsref_every.asp
+
   */
