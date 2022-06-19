@@ -140,18 +140,20 @@ a:hover {
 }
 
 #artgallery {
-    width: 100%;
+    background-color: ghostwhite;
+    overflow-x: scroll;
+    width: inherit;
+    white-space: nowrap;
 }
 
 .artgalleryphoto {
     display: inline-block;
     width: auto;
-    padding: 10px;
+    padding: 5px;
     margin: 0px;
     border: 2px solid ghostwhite;
     background-color: ghostwhite;
     color: #1a1a1a;
-    /*box-shadow: 10px 5px 5px rgb(37, 37, 37);*/
 }
 
 .mediaItem {
@@ -321,7 +323,8 @@ footer {
     }
 
     #artgallery {
-        width: 100%;
+        width: max-content;
+        overflow: scroll;
     }
 
     .artgalleryphoto {

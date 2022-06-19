@@ -13,7 +13,8 @@ Vue.component('carousel', {
             currentPath: 'media/Pexels_Imgs/pexels-mikhail-nilov-7988090.jpg',
             currentAlt: 'Pexels Keyboard image, Mikhail Nilov',
             currentDesc: '"A Person Holding a Black Keyboard", courtesy of Mikhail Nilov. The image has a Creative Commons license.',
-            slideIndex: 0,
+            // slideIndex starts at 1, so that the first cycle progresses to the next slide
+            slideIndex: 1,
             slides: [
                 {
                     path: 'media/Pexels_Imgs/pexels-mikhail-nilov-7988090.jpg',
