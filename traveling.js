@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
     console.log("DOM loading is complete.");
+
+    displayInfluencer();
   });
   
   /*function populateInfluencers(){
@@ -8,7 +10,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     appendChild("option")
   }*/
   
-  function displayInfluencer(event) {
+  function displayInfluencer() {
     // Fetch of JSON influencers data
     fetch("influencers.json")
       .then(response => response.json())
