@@ -4,6 +4,7 @@
         <title>Praveen's Website | Home</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
         <link href="siteStyling.css" rel="stylesheet"/> 
     </head>
     <body class="container">
@@ -30,10 +31,11 @@
                 </nav>
             </header>
             <!-- Section to display the figure on the left-hand side -->
-            <div id="introimage">
+            <div id="vue-introimage">
+                <carousel></carousel>
                 <!-- Image element to display supporting photograph -->
-                <img src="media/pexels-mikhail-nilov-7988090.jpg" alt="Pexels Keyboard image, Mikhail Nilov" height="900" width="601"/>
-                <aside class="caption">"A Person Holding a Black Keyboard", courtesy of Mikhail Nilov. The image has a Creative Commons license.</aside>
+                <!--<img src="media/pexels-mikhail-nilov-7988090.jpg" alt="Pexels Keyboard image, Mikhail Nilov" height="900" width="601"/>
+                <aside class="caption">"A Person Holding a Black Keyboard", courtesy of Mikhail Nilov. The image has a Creative Commons license.</aside> -->
                 <!--(Nilov, 2021)-->
             </div>
             <!-- Section to display the text content on the right-hand side -->
@@ -60,6 +62,7 @@
         Praveen Bachoti. METCS601. <a href="https://www.bu.edu/">Boston University.</a>
         <address><a href="mailto:praveenb@bu.edu">praveenb@bu.edu</a></address> 
     </footer>
+    <script src="indexvue.js"></script>
 </body>
 </html>
 <!-- 
