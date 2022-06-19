@@ -4,6 +4,7 @@
         <title>Praveen's Website | Interests</title>
         <meta charset="UTF-8">
         <script src="./traveling.js"></script>
+        <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
         <link href="siteStyling.css" rel="stylesheet"/> 
     </head>
     <body class="container">
@@ -27,40 +28,34 @@
                     </div>
                 </nav>
             </header>
-        <!-- Section for table element of vacation wish list -->
+        <!-- Section for table element of travel wish list -->
         <section class="infoSubContainer">
             <h2>Traveling</h2>
             <p>Here are some locations I desire to visit and some activities I would like to undertake in each. </p>
-            <ol>
-                <li><data value="001">Sailing in Malta</data></li>
-                <li><data value="002">Skiing in Finland</data></li>
-                <li><data value="003">Hiking in Argentina</data></li>
-                <li><data value="004">Surfing in California</data></li>
-                <li><data value="005">Skydiving in Colorado</data></li>
-                <li><data value="006">Horseback riding in Mongolia</data></li>
-                <li><data value="007">Golfing in Canada</data></li>
-            </ol>
+            <article id="travelList">
+                <ol v-for="item in travelList">
+                    <li :value="item.key"><data :value="item.value">{{item.activity}} in {{item.location}}</data></li>
+                </ol>
+            </article>
         </section>
         <!-- Section for dropdown to select travel influencers retrieved from back-end -->
         <section class="infoSubContainer">
             <fieldset id="influencer">
-                <legend>Inspiring Travel Influencers</legend>
-                <label>Select Influencer: </label>
+                <legend>Inspiring Travelers</legend>
+                <label>Select Traveler: </label>
                 <select id="infNameDropdown" onchange="displayInfluencer()">
                     <option>Murad Osmann</option>
                     <option>Chris Burkard</option>
                     <option>Jennifer Tuffen</option>
-                    <option>Jessica Stein</option>
-                    <option>Alex Stein</option>
+                    <option>Lauren Bullen</option>
+                    <option>Alex Strohl</option>
                 </select>
-                <h3 id="infName">Name1</h3>
+                <h3 id="infName"></h3>
                 <article id="infDataRegion">
-                    <p id="infDesc">
-                        Lectus urna duis convallis convallis tellus id interdum velit. Leo in vitae turpis massa sed elementum. Molestie nunc non blandit massa enim. Sed tempus urna et pharetra pharetra massa massa ultricies mi. Aliquam ultrices sagittis orci a scelerisque purus. 
-                    </p>
+                    <p id="infDesc"></p>
                     <figure id="infPhotoRegion">
                         <img src="media/autumn_street.jpg" alt="Autumn Street. Pencil and digital." id="influencerPhoto"/>
-                        <figcaption>This is a person</figcaption>
+                        <figcaption id="infPhotoCaption">This is a person</figcaption>
                     </figure>
                 </article>
             </fieldset>
@@ -74,10 +69,63 @@
         Praveen Bachoti. METCS601. <a href="https://www.bu.edu/">Boston University.</a>
         <address><a href="mailto:praveenb@bu.edu">praveenb@bu.edu</a></address> 
     </footer>
+    <script>
+        // Vue JS instnace to dynamically populate the travel list element
+        var app = new Vue({
+            el: '#travelList',
+            data: {
+                travelList: [
+                    {
+                        key: 1,
+                        value: '001',
+                        location: 'Malta',
+                        activity: 'Sailing'
+                    },
+                    {
+                        key: 2,
+                        value: '002',
+                        location: 'Finland',
+                        activity: 'Skiing'
+                    },
+                    {
+                        key: 3,
+                        value: '003',
+                        location: 'Argentina',
+                        activity: 'Hiking'
+                    },
+                    {
+                        key: 4,
+                        value: '004',
+                        location: 'California',
+                        activity: 'Surfing'
+                    },
+                    {
+                        key: 5,
+                        value: '005',
+                        location: 'Colorado',
+                        activity: 'Skydiving'
+                    },
+                    {
+                        key: 6,
+                        value: '006',
+                        location: 'Mongolia',
+                        activity: 'Horseback riding'
+                    },
+                    {
+                        key: 7,
+                        value: '007',
+                        location: 'Canada',
+                        activity: 'Golfing'
+                    },
+                ]
+            }
+        });
+    </script>
 </body>
 </html>
 <!-- 
     Sources:
     HTML Lang Attribute, https://www.w3schools.com/tags/att_lang.asp. 
     “Semantic Elements in HTML5.” W3docs, https://www.w3docs.com/learn-html/semantic-elements-in-html5.html. 
+    https://www.w3schools.com/tags/att_li_value.asp 
 -->

@@ -128,7 +128,7 @@ a:hover {
 
 .intro {
     font-weight: bold;
-    text-align: left;
+    text-align: center;
 }
 
 #introimage {
@@ -137,6 +137,13 @@ a:hover {
     background-color: inherit;
     word-wrap: normal;
     flex: 0 40%;
+}
+
+#selfPhoto {
+    border-radius: 50%;
+    border: 2px ghostwhite;
+    height: 100px;
+    width: 100px;
 }
 
 #artgallery {

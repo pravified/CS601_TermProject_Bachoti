@@ -2,6 +2,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
     console.log("DOM loading is complete.");
   });
   
+  /*function populateInfluencers(){
+    // Populate influencers dropdown dynamically from JSON
+    let infNameDropdown = document.getElementById("infNameDropdown");
+    appendChild("option")
+  }*/
+  
   function displayInfluencer(event) {
     // Fetch of JSON influencers data
     fetch("influencers.json")
@@ -13,6 +19,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         let infNameSelect = document.getElementById("infNameDropdown");
         let infNameText = document.getElementById("infName");
         let infDescText = document.getElementById("infDesc");
+        let infPhoto = document.getElementById("influencerPhoto");
+        let infPhotoCaption = document.getElementById("infPhotoCaption");
+
   
         // For each to loop through array of data from JSON, checking to see if current array's name matches selected
         // If it does, write contents to DOM, and break
@@ -20,6 +29,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
           if(element.name === infNameSelect.value) {
             infNameText.innerHTML = element.name;
             infDescText.innerHTML = element.description;
+            infPhotoCaption.innerHTML = element.name+".";
+            infPhoto.src = element.imgsrc;
 
             console.log("Influencer data displayed");
             return false;
