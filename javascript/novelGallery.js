@@ -40,8 +40,8 @@ Vue.component('gallery', {
                 }
             ],
             //Image dimensions
-            width: '25%',
-            height: '25%',
+            width: '40%',
+            height: '40%',
             //Button styles
             buttonStyle: {
                 'border-radius':'10px',
