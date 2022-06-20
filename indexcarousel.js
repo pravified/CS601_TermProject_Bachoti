@@ -19,17 +19,17 @@ Vue.component('carousel', {
                 {
                     path: 'media/Pexels_Imgs/pexels-mikhail-nilov-7988090.jpg',
                     alt: 'Pexels Keyboard image, Mikhail Nilov',
-                    desc: '"A Person Holding a Black Keyboard", courtesy of Mikhail Nilov. The image has a Creative Commons license.',
+                    desc: '"A Person Holding a Black Keyboard", courtesy of Mikhail Nilov. The image has a Creative Commons license.'
                 }, 
                 {
                     path: 'media/Pexels_Imgs/pexels-stefan-stefancik-91223.jpg',
                     alt: 'Pexels View, Stefan Stefancik',
-                    desc: '"Mountain View", courtesy of Stefan Stefancik. The image has a Creative Commons license.',
+                    desc: '"Mountain View", courtesy of Stefan Stefancik. The image has a Creative Commons license.'
                 },
                 {
                     path: 'media/Pexels_Imgs/pexels-flo-dahm-699459.jpg',
                     alt: 'Pexels Studio, Flo Dahm',
-                    desc: '"Digital Art in Studio", courtesy of Flo Dahm. The image has a Creative Commons license.',
+                    desc: '"Digital Art in Studio", courtesy of Flo Dahm. The image has a Creative Commons license.'
                 }
             ],
         };
