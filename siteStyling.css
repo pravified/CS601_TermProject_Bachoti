@@ -204,6 +204,12 @@ a:hover {
     border-radius: 8px;
 }
 
+#vue-novelGallery {
+    width: auto;
+    text-align: left;
+    padding: 20px;
+}
+
 .mediaItem {
     display: inline-block;
     width: 60%;
