@@ -221,6 +221,10 @@ a:hover {
     margin: 0px;
 }
 
+#vidContent {
+    width: 100%;
+}
+
 .formContainer{
     display: grid;
     grid-template-rows: auto;

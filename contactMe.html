@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="siteStyling.css" rel="stylesheet"/> 
         <script src="javascript/contactMeValidation.js"></script>
+        <!--<script src="navigation.js"></script>-->
     </head>
     <body class="container">
         <main class="wrapper">
@@ -27,21 +28,21 @@
                         <a href="resume.html" class="navlink">Resume</a>
                         <a class="navlink" id="activenavlink">Contact Me</a>
                         <a href="releaseHistory.html" class="navlink">Release History</a>
-                        <div id="mobileLink">
-                            <a class="navLink" onclick="displayMobileMenu()">Menu</a>
-                            <div id="mobileMenu">
-                                <a class="navlink" id="activenavlink">Home</a>
-                                <a href="artwork.html" class="navlink">Artwork</a>
-                                <a class="navlink">Interests</a>
-                                <ul>
-                                    <li><a href="novels.html">Novels</a></li>
-                                    <li><a href="traveling.html">Traveling</a></li>
-                                </ul>
-                                <a href="media.html" class="navlink">Media</a>
-                                <a href="resume.html" class="navlink">Resume</a>
-                                <a href="contactMe.html" class="navlink">Contact Me</a>
-                                <a href="releaseHistory.html" class="navlink">Release History</a>
-                            </div>
+                    </div>
+                    <div id="mobileLink">
+                        <a class="navLink" onclick="displayMobileMenu()">Menu</a>
+                        <div id="mobileMenu">
+                            <a class="navlink" id="activenavlink">Home</a>
+                            <a href="artwork.html" class="navlink">Artwork</a>
+                            <a class="navlink">Interests</a>
+                            <ul>
+                                <li><a href="novels.html">Novels</a></li>
+                                <li><a href="traveling.html">Traveling</a></li>
+                            </ul>
+                            <a href="media.html" class="navlink">Media</a>
+                            <a href="resume.html" class="navlink">Resume</a>
+                            <a href="contactMe.html" class="navlink">Contact Me</a>
+                            <a href="releaseHistory.html" class="navlink">Release History</a>
                         </div>
                     </div>
                 </nav>
@@ -64,9 +65,9 @@
                     <aside id="confEmailError" class="contactMeErrors">Email address format is invalid.</aside>
                     <label for="phoneNum">Phone: *</label><input type="text" name="phoneNum" id="phoneNum" placeholder="___-___-____"/>
                     <aside id="phoneNumError" class="contactMeErrors">Phone number format is invalid.</aside>
-                    <label for="city">City: *</label><input type="text" name="city" id="city" required/>
+                    <label for="city">City: *</label><input type="text" name="city" id="city"/>
                     <label for="stateTerritory">State / Territory: *</label>
-                    <select name="stateTerritory" id="stTySelect" required>
+                    <select name="stateTerritory" id="stTySelect">
                         <option value="selectStTy" style="font-style: italic;">Select State/Territory</option>
                         <option value="AL">AL - Alabama</option>
                         <option value="AK">AK - Alaska</option>
@@ -144,7 +145,7 @@
                         <option value="comment">Comment</option>
                         <option value="concern">Concern</option>
                     </select>
-                    <label for="messageContent">Message: *</label><textarea name="messageContent" id="msgcontent" required></textarea>
+                    <label for="messageContent">Message: *</label><textarea name="messageContent" id="msgcontent"></textarea>
                     <label for="contactDoc">Attachment: </label><input type="file" id="contactDoc">
                     <br/>
                     <input type="submit" id="submitBtn" name="submitBtn" value="Submit"/>

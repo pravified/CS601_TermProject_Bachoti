@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
     console.log("DOM loading is complete.");
-
+    
+    mobileMenu = document.getElementById("mobileMenu");
     displayInfluencer();
   });
   
@@ -9,6 +10,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     let infNameDropdown = document.getElementById("infNameDropdown");
     appendChild("option")
   }*/
+
+  let mobileMenu = ''; 
   
   function displayInfluencer() {
     // Fetch of JSON influencers data
@@ -24,7 +27,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         let infPhoto = document.getElementById("influencerPhoto");
         let infPhotoCaption = document.getElementById("infPhotoCaption");
 
-  
         // For each to loop through array of data from JSON, checking to see if current array's name matches selected
         // If it does, write contents to DOM, and break
         data.influencers.every((element) => {
@@ -42,6 +44,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
   
       });
   }
+
+function displayMobileMenu(){
+    if(mobileMenu.style.display === "none"){
+        mobileMenu.style.display = "block";
+    }
+    else {
+        mobileMenu.style.display = "none";
+    }
+}
   
   /*
   Sources:

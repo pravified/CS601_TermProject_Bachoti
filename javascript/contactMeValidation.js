@@ -24,6 +24,8 @@ function getDOMElems(){
     phoneNumError = document.getElementById("phoneNumError");
     zipCode = document.getElementById("zip");
     zipError = document.getElementById("zipError");
+
+    mobileMenu = document.getElementById("mobileMenu");
 }
 
 
@@ -43,6 +45,9 @@ function validateEntries () {
             isValid = false;
     }
     console.log(isValid);
+
+    if(isValid) {alert("Submission functionality yet to be implemented!");}
+    
     return isValid;
 }
 
@@ -99,6 +104,18 @@ function isZipFormatValid(zipError, zipValue) {
     else {
         zipError.style.display = "none";
         return true;
+    }
+}
+
+// Functionality for mobile menu link
+let mobileMenu = ''; 
+
+function displayMobileMenu(){
+    if(mobileMenu.style.display === "none"){
+        mobileMenu.style.display = "block";
+    }
+    else {
+        mobileMenu.style.display = "none";
     }
 }
 

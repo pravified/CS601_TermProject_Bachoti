@@ -4,9 +4,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
 let artworks = "";
+let mobileMenu = ''; 
+
 
 function getDOMElems(){
     artworks = document.getElementsByClassName("artgalleryphoto");
+    mobileMenu = document.getElementById("mobileMenu");
+
 }
 
 function highlightDesc(artwork){
@@ -24,6 +28,16 @@ function highlightDesc(artwork){
         }
     }
 }
+
+function displayMobileMenu(){
+    if(mobileMenu.style.display === "none"){
+        mobileMenu.style.display = "block";
+    }
+    else {
+        mobileMenu.style.display = "none";
+    }
+}
+
 
 /*
 Source:
