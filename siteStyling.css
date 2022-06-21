@@ -473,11 +473,11 @@ footer {
         flex-direction: column;
     }
     #infDesc {
-        flex: 1;
+        flex: 0;
         padding: 10px;
     }
     #infPhotoRegion{
-        flex: 0;
+        flex: 1;
         text-align: center;
     }
 
@@ -502,4 +502,5 @@ footer {
     Fraser, Dominic. “How to Keep Your Footer Where It Belongs ?” FreeCodeCamp.org, FreeCodeCamp.org, 16 May 2022, https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/. 
     Schwarz, Daniel. “How to Use CSS Media Queries to Make Printable Web Pages.” Our Blog, Our Blog, 15 Dec. 2021, https://sympli.io/blog/a-quick-guide-to-css-for-printable-webpages/. 
     “Responsive Web Design - Media Queries.” Responsive Web Design Media Queries, https://www.w3schools.com/css/css_rwd_mediaqueries.asp. 
+    "Alligator.io." "How To Scale and Crop Images with CSS object-fit." Digital Ocean, 3 Sept. 2020, https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit
 */

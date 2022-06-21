@@ -76,9 +76,11 @@ var app = new Vue({
 
 /*
 Sources:
-https://www.w3schools.com/jsref/met_win_setinterval.asp
-https://codesource.io/using-the-vue-mounted-lifecycle-hook/ 
+Basic concept and approach referenced from Hanson, Josh. “Vue-CS601-Example1/vue-example-1.js.”
 
 Sources (Images):
-
+    Fong, Jessica. Brink Literacy Project. Cover illustration. "Radiant Black", by Kyle Higgins, Marcelo Costa, et. al. 2021. Front Cover.
+    Fernandez, Leandro. Image Comics, Inc. Cover illustration. "The Old Guard", by Greg Rucka, Leandro Fernandez, et. al. 2020. Front Cover.
+    Shaw, Geoff, et. al. Image Comics, Inc. Cover Illustration. "God Country", by Donny Cates, Geoff Shaw, et. al. 2017. Front Cover.
+    Capullo, Greg, et. al. Image Comics, Inc. Cover Illustration. "Reborn", by Mark Millar and Greg Capullo. 2019. Front Cover.
 */

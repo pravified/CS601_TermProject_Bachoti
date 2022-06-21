@@ -24,12 +24,12 @@ Vue.component('carousel', {
                 {
                     path: 'media/carousel_imgs/pexels-stefan-stefancik-91223.jpg',
                     alt: 'Pexels View, Stefan Stefancik',
-                    desc: '"Mountain View", courtesy of Stefan Stefancik. The image has a Creative Commons license.'
+                    desc: '"Person Wearing Black Sneakers Sitting in Mountain", courtesy of Stefan Stefancik. The image has a Creative Commons license.'
                 },
                 {
                     path: 'media/carousel_imgs/pexels-flo-dahm-699459.jpg',
                     alt: 'Pexels Studio, Flo Dahm',
-                    desc: '"Digital Art in Studio", courtesy of Flo Dahm. The image has a Creative Commons license.'
+                    desc: '"Turned-on Gray Laptop Computer on Table", courtesy of Flo Dahm. The image has a Creative Commons license.'
                 }
             ],
         };
@@ -53,10 +53,12 @@ var app = new Vue({
 
 /*
 Sources:
-https://www.w3schools.com/jsref/met_win_setinterval.asp
-https://codesource.io/using-the-vue-mounted-lifecycle-hook/ 
+Basic concept and approach referenced from Hanson, Josh. “Vue-CS601-Example1/vue-example-1.js.”
+Chukwudire, Prince. "Using the Vue mounted lifecycle hook." Codesource.io, 17 February, 2021, https://codesource.io/using-the-vue-mounted-lifecycle-hook/.
+"Window setInterval()." W3Schools, https://www.w3schools.com/jsref/met_win_setinterval.asp.
 
 Sources (Images):
     Nilov, M. (2021). A Person Holding a Black Keyboard. Pexels. photograph. Retrieved May 15, 2022, from https://www.pexels.com/photo/a-person-holding-a-black-keyboard-7988090/. 
-
+    Stefancik, S. Person Wearing Black Sneakers Sitting in Mountain. Pexels. photograph. Retrieved from https://www.pexels.com/photo/person-wearing-black-sneakers-sitting-in-mountain-91223/.
+    Dahm, F. Turned-on Gray Laptop Computer on Table. Pexels. photograph. Retrieved from https://www.pexels.com/photo/turned-on-gray-laptop-computer-on-table-699459/. 
 */

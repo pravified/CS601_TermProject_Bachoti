@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", (event) => {
     console.log("DOM loading is complete.");
-    
+
     mobileMenu = document.getElementById("mobileMenu");
     displayInfluencer();
   });
@@ -56,9 +56,9 @@ function displayMobileMenu(){
   
   /*
   Sources:
-  Basic concept and approach referenced from 
-  Hanson, Josh. “cs601-Fetch-2/Script.js.” 12 June 2022. 
+  Basic concept and approach referenced from Hanson, Josh. “cs601-Fetch-2/Script.js.” 
+  "JavaScript Array every()." W3Schools, https://www.w3schools.com/jsref/jsref_every.asp.
 
-  https://www.w3schools.com/jsref/jsref_every.asp
-
+  Source(content):
+    "150 TOP TRAVEL INFLUENCERS AND TOP TRAVEL INSTAGRAM ACCOUNTS." Amra & Elma, 2022, https://www.amraandelma.com/100-top-travel-influencers/.
   */

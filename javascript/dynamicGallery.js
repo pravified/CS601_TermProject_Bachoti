@@ -41,6 +41,6 @@ function displayMobileMenu(){
 
 /*
 Source:
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString
-https://www.delftstack.com/howto/javascript/scroll-to-element-in-javascript/
+“Object.prototype.toString().” MDN, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString
+"Scroll to Specific Element in JavaScript." DelftStack, 2 October, 2021, https://www.delftstack.com/howto/javascript/scroll-to-element-in-javascript/
 */
