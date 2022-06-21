@@ -41,7 +41,7 @@
                             </ul>
                             <a href="media.html" class="navlink">Media</a>
                             <a href="resume.html" class="navlink">Resume</a>
-                            <a href="contactMe.html" class="navlink" id="activenavlink">Contact Me</a>
+                            <a href="contactMe.html" class="navlink">Contact Me</a>
                             <a href="releaseHistory.html" class="navlink">Release History</a>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
             <!-- BU email, personal email, phone, alternative phone, state -->
             <article class="infoSubContainer" id="contactMeForm">
                 <h2>Contact Me</h2>
-                <img src="media/envelope-silhouette-2.jpg" height="60px" width="100px"/>
+                <img src="media/envelope-silhouette-2.jpg" height=60 width=100 alt="Envelope icon"/>
                 <!-- full form contents: first name, last name, email address, confirm email address, city, state, zip, industry -->
                 <aside>Questions, comments or concerns? Please fill out the form below: </aside><br/>
                 <form onsubmit="return validateEntries()">
@@ -66,7 +66,7 @@
                     <label for="phoneNum">Phone: *</label><input type="text" name="phoneNum" id="phoneNum" placeholder="___-___-____"/>
                     <aside id="phoneNumError" class="contactMeErrors">Phone number format is invalid.</aside>
                     <label for="city">City: *</label><input type="text" name="city" id="city"/>
-                    <label for="stateTerritory">State / Territory: *</label>
+                    <label for="stTySelect">State / Territory: *</label>
                     <select name="stateTerritory" id="stTySelect">
                         <option value="selectStTy" style="font-style: italic;">Select State/Territory</option>
                         <option value="AL">AL - Alabama</option>
@@ -128,7 +128,7 @@
                     </select>
                     <label for="zip">Zip: *</label><input type="text" name="zip" id="zip" placeholder="_____"/>
                     <aside id="zipError" class="contactMeErrors">Zip code format is invalid.</aside>
-                    <label for="industry">Industry: </label><select name="industry" id="industrySelect">
+                    <label for="industrySelect">Industry: </label><select name="industry" id="industrySelect">
                         <option value="selectIndustry" style="font-style: italic;">Select Industry</option>
                         <option value="InformationTechnology">Information Technology</option>
                         <option value="Healthcare">Healthcare</option>
@@ -138,13 +138,13 @@
                         <option value="LifeSciences">Life Sciences</option>
                         <option value="HumanResources">Human Resources</option>
                     </select>
-                    <label for="messageType">Message Type: </label><select name="messageType" id="msgTypeSelect">
+                    <label for="msgTypeSelect">Message Type: </label><select name="messageType" id="msgTypeSelect">
                         <option value="selectType" style="font-style: italic;">Select Type</option>
                         <option value="question">Question</option>
                         <option value="comment">Comment</option>
                         <option value="concern">Concern</option>
                     </select>
-                    <label for="messageContent">Message: *</label><textarea name="messageContent" id="msgcontent"></textarea>
+                    <label for="msgcontent">Message: *</label><textarea name="messageContent" id="msgcontent"></textarea>
                     <label for="contactDoc">Attachment: </label><input type="file" id="contactDoc">
                     <br/>
                     <input type="submit" id="submitBtn" name="submitBtn" value="Submit"/>
