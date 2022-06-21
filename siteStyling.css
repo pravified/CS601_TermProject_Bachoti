@@ -462,8 +462,10 @@ footer {
         width: 100%;
     }
 
-    #introimage {
-        visibility: collapse;
+    #vue-introimage {
+        height: 300px;
+        width: fit-content;
+        object-fit: cover;
     }
 
     #infDataRegion {
