@@ -68,17 +68,6 @@ Vue.component('gallery', {
                 this.activeDesc = this.images[this.slideIndex].desc;
             }
     },
-    // "Mounted" Method that cycles through slides in the slides array every 4 seconds, by incrementing index of current slide (fires on page load)
-    /*mounted(){
-        setInterval(() => {
-            if(this.slideIndex > 2) {this.slideIndex = 0;}
-            this.currentPath = this.slides[this.slideIndex].path;
-            this.currentAlt = this.slides[this.slideIndex].alt;
-            this.currentDesc = this.slides[this.slideIndex].desc;
-            this.slideIndex++;
-        },
-        4000)
-    },*/
 });
 // Creating Vue instance for gallery
 var app = new Vue({

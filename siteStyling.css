@@ -44,6 +44,10 @@
     z-index: 1;
 }
 
+#mobileLink {
+    display: none;
+}
+
 #navlinks {
     flex: 1 -10%;
     text-align: justify;
@@ -253,6 +257,10 @@ textarea {
     height: 100px;
 }
 
+#releaseHist {
+    text-align: center;
+}
+
 /* Placeholder for video in print view */
 #vidPlaceholder {
     visibility: collapse;
@@ -401,16 +409,50 @@ footer {
 /* Media Query for mobile view */
 @media only screen and (max-width: 768px) {
 
+    .container {
+        padding: 0px;
+        width: 100%;
+    }
+
     .wrapper {
         flex-direction: column;
         width: 100%
     }
 
     .navigation {
-        display: inline;
-        font-size: small;
+        display:inline-flex;
+        background-color: #007cdb;
+        padding: 0px;
+        font-size: larger;
+        width: 100%;
+    }
+    
+    #navlinks {
+        display: none;
+    }
+    #mobileLink {
+        display: inline-block;
+        position: relative;
+        visibility: visible;
+        justify-self: end;
+        padding: 20px;
     }
 
+    #mobileMenu {
+        display: none;
+        position: fixed;
+        right: 0px;
+        background-color:#007cdb;
+        box-shadow: 0px 9px 15px 0px #1a1a1ac5;
+        min-width: 120px;
+        z-index: 2;
+    }
+    #mobileMenu a {
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
     img {
         height: 25%;
         width: 100%;
@@ -418,6 +460,19 @@ footer {
 
     #introimage {
         visibility: collapse;
+    }
+
+    #infDataRegion {
+        display: flex;
+        flex-direction: column;
+    }
+    #infDesc {
+        flex: 1;
+        padding: 10px;
+    }
+    #infPhotoRegion{
+        flex: 0;
+        text-align: center;
     }
 
     #biotext {

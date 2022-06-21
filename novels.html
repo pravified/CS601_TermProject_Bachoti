@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
         <link href="siteStyling.css" rel="stylesheet"/> 
+        <script src="navigation.js"></script>
     </head>
     <body class="container">
         <main class="wrapper" id="verticalflex">
@@ -26,6 +27,22 @@
                         <a href="resume.html" class="navlink">Resume</a>
                         <a href="contactMe.html" class="navlink">Contact Me</a>
                         <a href="releaseHistory.html" class="navlink">Release History</a>
+                        <div id="mobileLink">
+                            <a class="navLink" onclick="displayMobileMenu()">Menu</a>
+                            <div id="mobileMenu">
+                                <a class="navlink" id="activenavlink">Home</a>
+                                <a href="artwork.html" class="navlink">Artwork</a>
+                                <a class="navlink">Interests</a>
+                                <ul>
+                                    <li><a href="novels.html">Novels</a></li>
+                                    <li><a href="traveling.html">Traveling</a></li>
+                                </ul>
+                                <a href="media.html" class="navlink">Media</a>
+                                <a href="resume.html" class="navlink">Resume</a>
+                                <a href="contactMe.html" class="navlink">Contact Me</a>
+                                <a href="releaseHistory.html" class="navlink">Release History</a>
+                            </div>
+                        </div>
                     </div>
                 </nav>
             </header>
