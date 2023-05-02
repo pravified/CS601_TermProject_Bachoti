@@ -295,9 +295,9 @@ textarea {
     display: flex;
     flex-direction: row;
 }
-#influencerPhoto {
-    height: 100px;
-    width: 100px;
+#bandPhoto {
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
 }
 #infDesc {
