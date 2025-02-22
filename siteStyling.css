@@ -148,7 +148,7 @@ a:hover {
     border: 2px ghostwhite;
     height: 100px;
     width: 100px;
-    visibility: hidden;
+    /*visibility: hidden;*/
 }
 
 #artgallery {
